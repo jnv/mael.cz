@@ -1,7 +1,7 @@
 source :rubygems
 
 group :development do
-  gem 'middleman'
+  gem 'middleman', '~>2.0.16'
   gem 'rake'
 end
 
