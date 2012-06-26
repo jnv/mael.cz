@@ -1,22 +1,46 @@
 @import compass
+@import normalize
 
-$link-color: #0388a6
-$link-hover-color: #009ce0
-$link-focus-color: false
-$link-active-color: false
-$link-visited-color: false
+$link-color: #86AAD1
+$link-hover-color: #345980
+$link-visited-color: #6B7580
 
 $font-color: #f1f1f1
-$font-family: sans-serif
-$base-font-size: 12px
-$base-line-height: 18px
+$font-family: Georgia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', serif
+$base-font-size: 100.1%
+$base-line-height: 1.5
+
+@include normalize
 
 body
   font-family: $font-family
   color: $font-color
+  background: #000 image-url("bg.jpg") top center repeat-x
+  font-size: $base-font-size
+  line-height: $base-line-height
 
 a
-  +link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color)
+  padding: 0.1ex 0.2em
+  color: $link-color
+a:visited
+  color: $link-visited-color
+a:hover, a:focus
+  background: $link-hover-color
+  color: $font-color
+  text-decoration: none
 
 #main
-  padding: 50px
+  max-width: 38em
+  margin: 0 auto
+  padding: 3em
+
+#logo
+  margin: 4em 0 2em
+
+#content
+  margin-left: 3.4em // ~ velikost M
+
+.major
+  font-size: 1.4em
+.minor
+  font-size: 1.2em
