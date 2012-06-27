@@ -17,7 +17,7 @@ end
 desc "Deploy website via rsync"
 task :deploy do
   puts "## Deploying website via rsync to #{SSH_HOST}"
-  status = system("rsync -avze 'ssh' build/ #{SSH_HOST}:#{SSH_DIR}")
+  status = system("rsync -avze 'ssh' --delete build/ #{SSH_HOST}:#{SSH_DIR}")
   puts status ? "OK" : "FAILED"
 end
 
