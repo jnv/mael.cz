@@ -1,5 +1,5 @@
 <% form_tag 'http://mael.us1.list-manage2.com/subscribe/post?u=b0d2d5f53264cabc557fa8393&id=d5e2ccc310', :id =>
-'newsletter', :method => 'post', :target => '_blank' do %>
+'newsletter', :method => 'post' do %>
   <p>
     <%= label_tag 'mce-EMAIL', caption: 'E-mail: ' %>
     <%= email_field_tag :EMAIL, id: 'mce-EMAIL', required: true %></p>
