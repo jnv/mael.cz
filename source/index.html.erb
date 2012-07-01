@@ -1,12 +1,9 @@
 <% content_for :head do %>
-<title>Maelström</title>
-<meta name="description" content="Maelström je plaformou pro lidi věnující se netradičním a okrajovým zájmům. Do naší činnosti spadají programy na conech, Conventicon a více.">
+	<title>Maelström</title>
+	<meta name="description" content="Maelström je plaformou pro lidi věnující se netradičním a okrajovým zájmům. Do naší činnosti spadají programy na conech, Conventicon a více.">
 <% end %>
 
-<header id="logo">
-	<h1><%= image_tag 'logo-maelstrom.png', alt: "Maelström" %></h1>
-</header>
-<!-- /header -->
+<%= partial 'header' %>
 
 <div id="content">
 	<p class="major">

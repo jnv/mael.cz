@@ -1,12 +1,9 @@
 <% content_for :head do %>
-<title>Přihlášení k newsletteru &ndash; Maelström</title>
+	<title>Přihlášení k newsletteru &ndash; Maelström</title>
+	<meta name="robots" content="noindex, follow">
 <% end %>
 
-<header id="logo">
-	<h1>
-	<%= link_to image_tag('logo-maelstrom.png', alt: "Maelström"), '/' %>
-	</h1>
-</header>
+<%= partial 'header' %>
 
 <section id="content">
   <h1>Potvrzení e-mailu</h1>
