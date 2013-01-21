@@ -1,21 +1,6 @@
 source :rubygems
 
-group :development do
-  gem 'middleman', '~>2.0.16'
-  gem 'rake'
-end
+gem "middleman", "~>3.0.7"
+gem "middleman-livereload"
 
-group :assets do
-  gem 'compass'
-  gem 'compass-normalize-plugin'
-end
-
-group :livereload do
-  gem 'middleman-livereload'
-end
-
-group :linux do
-  gem 'rb-inotify'
-  gem 'libnotify'
-end
-
+gem 'compass-normalize-plugin'
